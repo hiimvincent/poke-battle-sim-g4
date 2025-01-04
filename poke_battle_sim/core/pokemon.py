@@ -201,7 +201,7 @@ class Pokemon:
                 (
                     ((2 * self.base[s] + self.ivs[s] + self.evs[s] // 4) * self.level)
                     // 100
-                    + 5
+                    self.level + 5
                 )
                 * nature_stat_changes[s]
             )
